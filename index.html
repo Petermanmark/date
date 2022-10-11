@@ -6,16 +6,19 @@ body{
     text-align: center;
   font-family: sans-serif;
   font-weight: 100;
+  background-image: url(heart3.gif);
+  background-color: black;
 }
 h1{
-  color: black;
+  color: white;
   font-weight: 100;
   font-size: 40px;
   margin: 40px 0px 20px;
+  font-family: 'Brush Script MT', cursive;
 }
  #clockdiv{
     font-family: sans-serif;
-    color: black;
+    color: white;
     display: inline-block;
     font-weight: 100;
     text-align: center;
@@ -24,19 +27,24 @@ h1{
 #clockdiv > div{
     padding: 10px;
     border-radius: 3px;
-    background: purple;
+    background: rgb(204, 204, 204);
     display: inline-block;
 }
 #clockdiv div > span{
     padding: 15px;
     border-radius: 3px;
-    background:white;
+    background: gray;
     display: inline-block;
 }
-smalltext{
+#smalltext{
     padding-top: 5px;
     font-size: 16px;
 }
+#text{
+  color: white;
+  font-family: 'Brush Script MT', cursive;
+}
+
 </style>
 </head>
 <body>
@@ -59,9 +67,11 @@ smalltext{
     <div class="smalltext">Seconds</div>
   </div>
 </div>
+
   
 <p id="demo"></p>
-  
+<h3 id="text">Every seconds means you're getting closer to me</h3>
+
 <script>
   
 var deadline = new Date("oct 25, 2022 18:35:00").getTime();
