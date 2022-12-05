@@ -3,13 +3,13 @@
 <head>
 <style>
 body{
-    text-align: center;
+  text-align: center;
   font-family: sans-serif;
   font-weight: 100;
   background-image: url(heart3.gif);
   background-color: black;
 }
-h1{
+h3{
   color: white;
   font-weight: 100;
   font-size: 40px;
@@ -44,11 +44,19 @@ h1{
   color: white;
   font-family: 'Brush Script MT', cursive;
 }
+.responsive {
+  width: 100%;
+  height: auto;
+}
+p {
+  color: white;
+  font-family: 'Brush Script MT', cursive;
+}
 
 </style>
 </head>
 <body>
-<h1>Till our meeting :3</h1>
+<h3>Till our meeting :3</h3>
 <div id="clockdiv">
   <div>
     <span class="days" id="day"></span>
@@ -70,11 +78,13 @@ h1{
 
   
 <p id="demo"></p>
-<h3 id="text">Every seconds means you're getting closer to me</h3>
+<p>Every seconds means you're getting closer to me.</p>
+<p>I look at you and see the rest of my life in front of my eyes.</p>
+
 
 <script>
   
-var deadline = new Date("oct 25, 2022 18:35:00").getTime();
+var deadline = new Date("dec 20, 2022 20:55:00").getTime();
   
 var x = setInterval(function() {
   
@@ -97,5 +107,8 @@ if (t < 0) {
         document.getElementById("second").innerHTML = '0'; }
 }, 1000);
 </script>
+<div>
+  <img class="responsive" src="us.gif">
+</div>
 </body>
 </html>
